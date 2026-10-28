@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#123d2b">
+<meta name="description" content="NISFA SPICES CO. — Indian spices and masala.">
+<title>NISFA SPICES CO. | Masale</title>
+<style>
+:root{--g:#123d2b;--g2:#1e6042;--gold:#f3ca65;--cream:#fffaf0;--ink:#18271e;--muted:#69776e}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+.top{background:#092b1d;color:#fff;text-align:center;padding:10px;font-size:13px}
+header{display:flex;justify-content:space-between;align-items:center;padding:15px 5%;gap:12px;border-bottom:1px solid #eee;background:#fff}
+.logo{font-family:Georgia,serif;font-size:24px;font-weight:bold;color:var(--g);text-decoration:none;line-height:1.1}.logo small{display:block;font: bold 10px Arial;letter-spacing:3px;margin-top:5px}
+header a:not(.logo){color:var(--g);font-weight:bold;text-decoration:none;font-size:14px}
+.hero{padding:58px 6%;background:linear-gradient(120deg,#0b3020,#1b5438);color:white}
+.hero small{color:var(--gold);font-weight:bold;letter-spacing:2px}.hero h1{font: bold clamp(36px,6vw,60px)/1.08 Georgia,serif;margin:14px 0}.hero h1 span{color:var(--gold)}.hero p{max-width:560px;line-height:1.7;color:#edf3ed}.button{display:inline-block;border:0;border-radius:7px;background:var(--gold);color:#16261c;font-weight:bold;padding:13px 18px;text-decoration:none;cursor:pointer}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;background:var(--cream);padding:18px 5%;text-align:center;font-size:13px;font-weight:bold}
+main{padding:40px 5%}.heading{text-align:center;margin-bottom:24px}.heading h2{font: bold 32px Georgia,serif;color:var(--g);margin:0 0 8px}.heading p{color:var(--muted);font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid #e4e9e2;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;background:#fff;box-shadow:0 4px 14px #1835220a}.art{height:155px;overflow:hidden;background:#f5ead4}.art img{width:100%;height:100%;object-fit:cover;display:block}.body{padding:16px;display:flex;flex-direction:column;flex:1}.body h3{margin:0 0 8px;color:var(--g);font-size:18px}.price{font-size:23px;font-weight:bold;margin:5px 0 14px}.unit{font-size:13px;color:var(--muted);font-weight:normal}.add{border:0;background:var(--g);color:white;border-radius:7px;padding:12px;cursor:pointer;font-weight:bold;margin-top:auto}.add:hover{background:var(--g2)}
+.info{background:#f6f3e9;margin-top:32px;padding:24px;border-radius:12px;line-height:1.7}.info h3{color:var(--g);margin-top:0}
+footer{background:#092b1d;color:#fff;padding:28px 5%;text-align:center}footer p{font-size:13px;color:#d8e2d9;line-height:1.7}
+.cart{position:fixed;right:15px;bottom:15px;background:var(--gold);color:#17251d;border:0;border-radius:30px;padding:14px 18px;font-weight:bold;box-shadow:0 5px 18px #0003;cursor:pointer;z-index:3}
+.modal{display:none;position:fixed;inset:0;background:#0008;z-index:5;padding:0}.panel{background:#fff;position:absolute;right:0;top:0;height:100%;width:min(440px,100%);padding:22px;overflow:auto}.close{float:right;border:0;border-radius:50%;padding:8px 11px;cursor:pointer}.line{display:flex;justify-content:space-between;gap:10px;padding:12px 0;border-bottom:1px solid #eee}.qty button{padding:3px 9px;border:1px solid #ddd;background:#fafafa;cursor:pointer}.field{width:100%;padding:12px;border:1px solid #ddd;border-radius:7px;margin:5px 0 13px;font:inherit}.total{display:flex;justify-content:space-between;font-size:20px;font-weight:bold;margin:20px 0}.hint{font-size:12px;color:var(--muted);line-height:1.5}
+@media(max-width:650px){header{padding:13px 4%}.logo{font-size:21px}.hero{padding:46px 5%}.benefits{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}main{padding:32px 4%}.art{height:115px}.body{padding:12px}.body h3{font-size:15px}.price{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="top">🌿 NISFA SPICES CO. · Har rasoi ka asli swaad</div>
+<header>
+<a class="logo" href="#">NISFA<small>SPICES CO.</small></a>
+<a href="#products">Hamare Masale ↓</a>
+</header>
+<section class="hero">
+<small>SWAD JO YAAD RAHE</small>
+<h1>Masalon se laayein<br><span>behtareen swaad.</span></h1>
+<p>Roz ke khane ke liye masale — NISFA SPICES CO. ke saath apni rasoi ko dein lajawab flavour.</p>
+<a class="button" href="#products">Masale dekhein →</a>
+</section>
+<div class="benefits"><div>🌶️ Rozmarra ke masale</div><div>📦 Order par baat karein</div><div>💬 WhatsApp se order</div></div>
+<main id="products">
+<div class="heading"><h2>Hamare Masale</h2><p>Apna pasandida masala chunein aur order bhejein.</p></div>
+<div class="grid" id="productGrid"></div>
+<div class="info"><h3>NISFA SPICES CO.</h3><p>Product, quantity aur delivery ke baare mein jaankari ke liye WhatsApp par sampark karein. Order confirm karne se pehle stock, delivery charge aur final amount confirm hoga.</p></div>
+</main>
+<footer><div class="logo" style="color:#fff">NISFA<small>SPICES CO.</small></div><p>Masale · Swaad · Apnapan<br>© <span id="year"></span> NISFA SPICES CO.</p></footer>
+<button class="cart" onclick="openCart()">🛒 Cart (<span id="count">0</span>)</button>
+<div class="modal" id="modal" onclick="if(event.target===this)closeCart()"><div class="panel"><button class="close" onclick="closeCart()">✕</button><h2 style="color:#123d2b">Aapka Cart</h2><div id="cartLines"></div><div class="total"><span>Total</span><span id="total">₹0</span></div>
+<label>Naam</label><input id="name" class="field" placeholder="Apna naam likhein">
+<label>Delivery address</label><textarea id="address" class="field" rows="3" placeholder="Ghar, gaon/shehar, PIN code"></textarea>
+<label>Quantity unit</label><p class="hint">Rates per kg hain. Order mein har product ki quantity kg mein select karein. Chhoti quantity chahiye to WhatsApp par confirm karein.</p>
+<button class="button" style="width:100%" onclick="checkout()">WhatsApp par order bhejein</button>
+<p class="hint">WhatsApp order ke liye neeche script mein apna number set karna zaroori hai. Yeh site abhi online payment nahi leti.</p>
+</div></div>
+<script>
+// SETUP: Replace 91XXXXXXXXXX with your WhatsApp number, including India's 91 country code.
+const WHATSAPP_NUMBER = "91XXXXXXXXXX";
+// EDIT PRODUCTS HERE: change price/name/emoji whenever you want. Prices are per kg in INR.
+const products=[
+{id:1,name:"Mirchi",price:500,emoji:"🌶️",image:"mirchi.jpg"},
+{id:2,name:"Haldi",price:400,emoji:"🟡",image:"haldi.jpg"},
+{id:3,name:"Dhaniya",price:300,emoji:"🌿",image:"dhaniya.jpg"},
+{id:4,name:"Zeera",price:800,emoji:"🟤",image:"zeera.jpg"},
+{id:5,name:"Marich",price:1200,emoji:"⚫",image:"marich.jpg"},
+{id:6,name:"Mix Masala",price:500,emoji:"🧂",image:"mix-masala.jpg"}
+];
+let cart={};
+const money=n=>"₹"+n.toLocaleString("en-IN");
+function drawProducts(){document.getElementById("productGrid").innerHTML=products.map(p=>`<article class="card"><div class="art"><img src="${p.image}" alt="${p.name} masala photo"></div><div class="body"><h3>${p.name}</h3><div class="price">${money(p.price)} <span class="unit">/ kg</span></div><button class="add" onclick="add(${p.id})">＋ Cart mein daalein</button></div></article>`).join("")}
+function add(id){cart[id]=(cart[id]||0)+0.5;renderCart();openCart()}
+function change(id,delta){cart[id]=Math.round(((cart[id]||0)+delta)*100)/100;if(cart[id]<=0)delete cart[id];renderCart()}
+function renderCart(){let chosen=products.filter(p=>cart[p.id]);document.getElementById("count").textContent=chosen.reduce((s,p)=>s+1,0);document.getElementById("cartLines").innerHTML=chosen.length?chosen.map(p=>`<div class="line"><div><b>${p.name}</b><br>${money(p.price)} / kg<br><div class="qty"><button onclick="change(${p.id},-0.5)">−</button> ${cart[p.id]} kg <button onclick="change(${p.id},0.5)">+</button></div></div><b>${money(p.price*cart[p.id])}</b></div>`).join(""):'<p>Cart khaali hai. Pehle masala add karein.</p>';document.getElementById("total").textContent=money(chosen.reduce((s,p)=>s+p.price*cart[p.id],0))}
+function openCart(){document.getElementById("modal").style.display="block";renderCart()}
+function closeCart(){document.getElementById("modal").style.display="none"}
+function checkout(){let chosen=products.filter(p=>cart[p.id]);if(!chosen.length){alert("Pehle cart mein masala daalein.");return}if(!/^\d{10,15}$/.test(WHATSAPP_NUMBER)){alert("Setup baaki hai: index.html mein 91XXXXXXXXXX ki jagah apna WhatsApp number likhein.");return}let name=document.getElementById("name").value.trim(),address=document.getElementById("address").value.trim();if(!name||!address){alert("Naam aur address likhein.");return}let lines=chosen.map(p=>`${p.name}: ${cart[p.id]} kg x ${money(p.price)}/kg = ${money(p.price*cart[p.id])}`);let total=chosen.reduce((s,p)=>s+p.price*cart[p.id],0);let msg=`Namaste NISFA SPICES CO.! Mujhe ye order karna hai:\n${lines.join("\n")}\nProduct total: ${money(total)}\nNaam: ${name}\nAddress: ${address}\nKripya stock, delivery charge aur final total confirm karein.`;window.open("https://wa.me/"+WHATSAPP_NUMBER+"?text="+encodeURIComponent(msg),"_blank")}
+document.getElementById("year").textContent=new Date().getFullYear();drawProducts();renderCart();
+</script>
+</body></html>
